@@ -1,0 +1,20 @@
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f3f4f5 !important;
+
+
+}
+@import "font";
+.moqup-view .pz-col, .moqup-view .ivu-col {
+  height: auto !important;
+}
+.moqup-view .pz-workspace{
+  border: none!important;
+}
+.moqup-view .pz-workspace-container-wrapper .grid-schema .ivu-row{
+  background: #f3f4f5 !important;
+}

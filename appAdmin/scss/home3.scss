@@ -1,0 +1,166 @@
+
+
+.bums-home {
+  height: 100vh;
+  background-color: #ffffff;
+  overflow-y: auto;
+
+  .logo{
+    border-right:none !important;
+    box-shadow: none !important;
+    padding-right: 0 !important;
+
+    a{
+      display: flex;
+      flex-direction: row;
+      padding-top: 0px;
+      justify-content: center;
+      img{
+        width: auto !important;
+        max-width: 100%;
+        height: auto;
+        max-height: 125px;
+        margin-top: 0px;
+      }
+
+    }
+  }
+  .brand-txt{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    margin-left: 25px;
+    h1{
+      color: var(--primary);
+      font-size: 21px;
+      margin: 0;
+      line-height: 21px;
+    }
+    h2{
+      font-size: 16px;
+      color: var(--primary);
+      font-weight: 400;
+      margin: 0;
+      line-height: 20px;
+    }
+  }
+
+
+  .material .crud-page-header {
+    box-shadow: none !important;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    text-align: right;
+    line-height: 50px;
+    padding-right: 20px;
+    color: var(--primary);
+  }
+
+}
+
+.bums-container {
+
+  width: 1170px;
+  display: block;
+  margin: 0 auto;
+  min-width: 800px;
+
+  .b-row {
+    display: flex;
+  }
+
+  .b-item {
+    width: 25%;
+    height: 200px;
+    transition: all 0.3s ease;
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+    img{
+      width: 60px;
+      transition: all 0.3s ease;
+
+
+    }
+    h3{
+      font-weight: 400;
+      margin-top: 20px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+    .b-info{
+      color: #9c9c9c;
+      max-width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      opacity: 0;
+      transition: all 0.3s ease;
+
+    }
+
+    &:hover{
+      box-shadow: 0 20px 52px -20px rgba(0, 0, 0, 0.5);
+        //background-color: #fdcab4;
+        background-color:var(--primary);
+
+      img{
+          transform: scale(0.8) translateY(-45%);
+          filter: brightness(0) invert(1);
+      }
+
+      h3{
+        transform:  translateY(-100%);
+          color: #fff;
+      }
+      .b-info{
+        transform:  translateY(-50%);
+        opacity: 1;
+          color: #fff;
+      }
+    }
+  }
+}
+
+.bums-brand {
+  text-align: left;
+  display: block;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: -20px;
+  img {
+    width: 100px;
+  }
+  .manai-khoroo{
+    margin-left: 20px;
+    width: 280px !important;
+    height: auto;
+  }
+  .sponsor{
+      float: right;
+      width: 480px !important;
+      height: auto;
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 100px;
+    color: var(--primary);
+    margin-left: 40px;
+    font-size: 21px;
+  }
+}
+
+.border-default-left {
+  border-left: 1px solid var(--primary);
+}
+
+.border-default-top {
+  border-top: 1px solid var(--primary);
+}

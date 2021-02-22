@@ -1,0 +1,230 @@
+
+//Side bar
+.sidebar {
+    margin-top: $header-height;
+    background: #ffffff !important;
+    nav {
+        ul {
+            li {
+                padding: 0 !important;
+                a {
+                    i {
+                        color: var(--primary) !important;
+                    }
+                    &:hover, &.active {
+                        background: var(--primary) !important;
+
+                        i {
+                            color: #ffffff !important;
+                        }
+                        span{
+                            color: #ffffff !important;
+                        }
+                        border-left: none !important;
+                    }
+                }
+            }
+        }
+        overflow-y: auto;
+    }
+    .aside-bottom {
+        ul {
+            li {
+                a {
+                    color: $text-color !important;
+                    i {
+                        color: var(--primary) !important;
+                    }
+                    border-top: solid 1px #9c9c9c !important;
+                    &:hover,  &.active {
+                        background: var(--primary) !important;
+
+                        i {
+                            color: #ffffff !important;
+                        }
+                        span{
+                            color: #ffffff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.with-text {
+        width: 140px !important;
+        nav {
+            ul {
+                li {
+                    padding: 0 0 1px 0;
+                    a {
+                        position: relative;
+                        text-align: center;
+                        overflow-y: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 7px 0 !important;
+                        color: $text-color !important;
+                        transition: all .3s;
+                        i {
+                            color: var(--primary) !important;
+                            display: block;
+                            font-size: 22px;
+                            margin-bottom: 6px;
+                            transition: all .3s;
+                        }
+                        span:not(.ivu-badge) {
+                            color: $text-color !important;
+                            font-size: 11px;
+                            font-weight: 500;
+                            line-height: 12px;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            display: block;
+                            transition: all .3s;
+                        }
+
+                        .ivu-badge {
+                            position: absolute;
+                            top: 3px;
+                            right: 10px;
+                        }
+
+                        &:hover {
+                            border-left: 3px solid var(--primary) !important;
+                            background: var(--primary) !important;
+                            //background: linear-gradient(90deg,rgba(75,123,236,.3) 0,rgba(75,123,236,0)) !important;
+                            i {
+                                color: #ffffff !important;
+                            }
+                            span{
+                                color: #ffffff !important;
+                            }
+                        }
+                        &.active {
+                            border-left: 3px solid var(--primary) !important;
+                            background: var(--primary) !important;
+
+                            i {
+                                color: #ffffff !important;
+                            }
+                            span{
+                                color: #ffffff !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .logo{
+        background: #ffffff;
+        height: 50px !important;
+        img{
+            width: 40px !important;
+        }
+        h1{
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+}
+
+//Sub header
+.sub-header {
+    &-left {
+        width: auto;
+        h3 {
+            &.title {
+                border-top: solid 3px lighten($second, 10%) !important;
+            }
+        }
+    }
+    &-right {
+        ul {
+            >li {
+                &.avatar-item {
+                    .ivu-poptip-content {
+                        .ivu-poptip-arrow {
+                            border-bottom-color: var(--primary) !important;
+                            &:after {
+                                border-bottom-color: var(--primary) !important;
+                            }
+                        }
+                        .ivu-poptip-body .header-profile-info {
+                            background: var(--primary) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Sub sidebar
+.sub-sidebar {
+    nav {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: $text-color !important;
+                    }
+                    &.active {
+                        font-weight: 400 !important;
+                        &:hover {
+                            color: $text-color !important;
+                            cursor: default;
+
+                        }
+                        color: $text-color !important;
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.sub-sidebar-top{
+    padding: 10px !important;
+    h2{
+        line-height: 18px !important;
+    }
+}
+.sub-nav-list{
+    .card-body{
+        max-height: calc(100% - 90px);
+        overflow-y: auto;
+        max-width: 280px;
+    }
+}
+.moqup-title {
+    margin-bottom: 0.5rem;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 14px 30px !important;
+    color:#e84a06 !important;
+    background: #ece8fd !important;
+    //background: rgba(232, 148, 80, 0.2) !important;
+}
+.crud-page-body .v-nav .card-body li a {
+    transition: all 0s ease !important;
+
+}
+.crud-page-body .v-nav .card-body li a.active {
+    color: var(--primary) !important;
+    //background: var(--primary);
+}
+.crud-page-body .v-nav .card-body li a:hover {
+    color: var(--primary) !important;
+    //background: var(--primary) !important;
+}
+.crud-page-body .v-nav .card-header {
+    //color: var(--primary) !important;
+    background: #ffffff !important;
+}

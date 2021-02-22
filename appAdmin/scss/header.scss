@@ -1,0 +1,147 @@
+header{
+  height: $header-height !important;
+  background: var(--primary) !important;
+
+  z-index: 10 !important;
+  padding: 0;
+  //box-shadow: 0 0.05rem 0.01rem rgba(75, 75, 90, 0.075) !important;
+  top: 1.25rem !important;
+  left: 2.3em !important;
+  width: calc(100% - 3.7em) !important;
+  position: absolute !important;
+
+  .wbg{
+    background-color: $whith-bg;
+    position: absolute;
+    left: 270px;
+    width: calc(100% - 300px);
+    height: $header-height;
+    z-index: 0;
+
+
+  }
+  .wbg-border{
+    background-color: #e2e8f0;
+    height: 1px;
+    z-index: 2;
+    left: 260px;
+    width: calc(100% - 280px);
+    bottom: 0;
+    position: absolute;
+  }
+
+  .logo{
+    background-color: var(--primary);
+    border-right:none !important;
+    box-shadow: none !important;
+
+    width: 228px;
+    min-width: 228px;
+    max-width: 228px;
+    margin-left: 0px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+
+    a{
+      display: flex;
+      flex-direction: row;
+      padding-top: 0px;
+      img{
+        width: auto !important;
+        max-width: 100%;
+        height: auto;
+        max-height: $header-height;
+        margin-top: 0px;
+        margin-left: 0 !important;
+      }
+
+    }
+  }
+  .side-toggle{
+    color: var(--primary);
+    margin: 13px 10px 0 0px;
+    i{
+      font-size: 25px;
+    }
+    &:hover{
+      color: #001E35;
+    }
+  }
+
+  .header-left{
+    display: flex;
+    padding: 0 10px;
+    h3{
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--primary);
+      width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    background-color: $whith-bg;
+    border-top-left-radius: $border-radius;
+    height: $header-height;
+    line-height: $header-height;
+    z-index: 1;
+    button{
+      height: 28px;
+      margin-top: 10px;
+    }
+  }
+  .hidden-page-title{
+    h3, .divider{
+      display: none;
+    }
+  }
+  .header-right{
+    margin-left: auto;
+    display: flex;
+    padding: 0 10px;
+    height: $header-height;
+    line-height: $header-height;
+    background-color: $whith-bg;
+    border-top-right-radius: $border-radius;
+    z-index: 1;
+  }
+  .user-control{
+    border-left: none !important;
+  }
+  .vue-portal-target{
+    display: flex;
+  }
+ .divider {
+   height: 20px;
+   width: 1px;
+   background: #dedede;
+   margin: 15px 10px;
+  }
+
+  .brand-txt{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    h1{
+      color: var(--primary);
+      font-size: 18px;
+      margin: 0;
+      line-height: 18px;
+    }
+    h2{
+      font-size: 14px;
+      color: var(--primary);
+      font-weight: 400;
+      margin: 0;
+      line-height: 14px;
+    }
+  }
+
+
+}
+.aside-page{
+  header{
+    border-bottom: none ;
+  }
+}

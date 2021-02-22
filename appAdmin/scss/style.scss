@@ -1,0 +1,99 @@
+@import "variables";
+@import "color";
+@import "iframe";
+@import "report";
+@import "font";
+@import "home3";
+@import "header";
+@import "top-nav";
+@import "side-menu";
+@import "side-bar";
+@import "settings";
+@import "dark";
+@import "light";
+
+//@import "../../../../node_modules/vc-ribbon/dist/lib/vc-ribbon.min.css";
+body{
+  background-color: var(--primary);
+  .paper-theme{
+    background-color: var(--primary);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+    position: relative;
+    overflow-y: auto !important;
+    min-height: 100vh !important;
+    height: auto !important;
+  }
+  header, header .logo {
+    align-items: center;
+    display: flex;
+  }
+  .admin-page {
+    padding: 50px 20px 20px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+}
+html, body {
+  overflow-y: auto !important;
+}
+.paper-theme{
+
+}
+.ivu-select-input[disabled]{
+  color: #333 !important;
+}
+.ivu-input[disabled], fieldset[disabled] .ivu-input{
+  color: #333 !important;
+}
+.logout-help{
+  width: 100%;
+  display: flex!important;
+  a{
+    display: flex !important;
+    text-align: center !important;
+    flex: 1;
+    i{
+      margin: 0 auto;
+    }
+  }
+}
+.v-nav{
+  max-height: 100%;
+  overflow-y: auto;
+}
+main{
+  .material .crud-page-body .ag-header {
+    background: #fff !important;
+  }
+  .crud-page-body{
+    height: calc(100% - 70px) !important;
+  }
+
+}
+.nested{
+  .v-nav{
+    display: none;
+  }
+}
+body main, body .paper-theme main .page {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  background: $whith-bg !important;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  overflow-x: hidden;
+}
+.ivu-drawer-mask{
+  z-index: 1002!important;
+}
+.ivu-drawer-wrap{
+  z-index: 1003!important;
+}
+.leaflet-top, .leaflet-bottom{
+  z-index: 400 !important;
+}
